@@ -2,27 +2,27 @@ class Parqview < Formula
   desc "Terminal UI for exploring Parquet and CSV files"
   homepage "https://github.com/robince/parqview"
   license "MIT"
-  version "1.6.0"
+  version "1.6.1"
 
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/robince/parqview/releases/download/v#{version}/parqview_#{version}_darwin_amd64.tar.gz"
-      sha256 "67c0fe3ff34b6e1ba5245ff6b467f29549a728b120182d61df53618d9e61f64c"
+      sha256 "3bf1d4c53dc5daa4da2eeb0e73ec26f7fdd305c9782ad03e23192ac04db556d5"
     end
     if Hardware::CPU.arm?
       url "https://github.com/robince/parqview/releases/download/v#{version}/parqview_#{version}_darwin_arm64.tar.gz"
-      sha256 "4162409328888611452a2705eb4acd2931ed460eeb02cc297290ccf6ef80b0ca"
+      sha256 "28f57781a6bcba58335af959421693ae5d6e40ccdbe5a9986c522e8070af76ca"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/robince/parqview/releases/download/v#{version}/parqview_#{version}_linux_amd64.tar.gz"
-      sha256 "e1137903b593441de8ea5495631f47d2809349a0147f419850102156749a6ea4"
+      sha256 "20c4aa0234405efcbf1a42c2170bc720a9735d1d9c0ac85925c592c7e23ea4a9"
     end
     if Hardware::CPU.arm?
       url "https://github.com/robince/parqview/releases/download/v#{version}/parqview_#{version}_linux_arm64.tar.gz"
-      sha256 "26d1ed11362a4d0c7af2f1621150301492fd2980348e858d5591898ad0dcb1f8"
+      sha256 "530f57ba0254451c3e1786d08cc5fc709601bae584cddad74eb03b4553f4ac1e"
     end
   end
 
